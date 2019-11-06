@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "module": "es2015",
+        "target": "es2015",
+        "outDir": "typescript/prebuild"
+    },
+    "include": [
+        "typescript"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

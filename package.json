@@ -1,0 +1,40 @@
+{
+  "name": "consumerlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "./node_modules/.bin/babel typescript/prebuild -d js",
+    "bundle": "browserify js/app.js -o js/app.bundle.js",
+    "build-test": "./node_modules/.bin/babel tests/src -d tests/build && browserify tests/build/tests.js -o tests/tests.bundle.js"
+  },
+  "author": "CS",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@types/jquery": "^3.3.31",
+    "@types/jquery.validation": "^1.16.6",
+    "eslint": "^6.2.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "ie": "9",
+            "firefox": "60",
+            "chrome": "67",
+            "safari": "11.1"
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "qunit": "^2.9.2"
+  }
+}

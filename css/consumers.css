@@ -1,0 +1,103 @@
+/* Таблица покупателей consumers.css */
+#consumers {
+    border: 1px solid #dee2e6;
+    border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+}
+
+.column-10 {
+    flex: 0 1 10%;
+    -webkit-flex: 0 1 10%;
+    -ms-flex: 0 1 10%;
+}
+
+.column-30 {
+    flex: 0 1 30%;
+    -webkit-flex: 0 1 30%;
+    -ms-flex: 0 1 30%;
+}
+
+.column.noguts {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.column-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: lightgray;
+    font-size: 0.75rem;
+}
+
+.consumer-item:not(:first-child) {
+    border-top: 1px solid #dee2e6!important;
+}
+
+.consumer-item:hover {
+    background-color: #ffffff;
+}
+
+.consumer-item:hover {
+    background-color: #dee2e6;
+    cursor: pointer;
+}
+
+.consumer-item-kind {
+    position: relative;
+}
+
+.consumer-item-kind .tooltip {
+    visibility: hidden;
+    background-color: #f5f0a9;
+    color: #000111;
+    text-align: center;
+    border-radius: 0.25rem;
+    font-size: 0.7rem;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.consumer-item-kind:hover .tooltip {
+    visibility: visible;
+}
+
+
+.button-bar {
+    padding: 0.15rem;
+    margin: 0.30rem 0;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.75rem 0.85rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.85rem;
+}
+
+.button:hover,
+.button.pressed {
+    background-color: #3e8e41;
+}
+
+.button-blue {
+    background-color: #008CBA;
+}
+
+.button-blue:hover,
+.button-blue.pressed {
+    background-color: rgb(62, 121, 141);
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
